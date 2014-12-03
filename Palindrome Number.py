@@ -2,7 +2,7 @@
 #问题描述
 #Determine whether an integer is a palindrome. Do this without extra space.
 #检查回文整数
-#直接转字符串是否相等,感觉这样做是有点low,用时1700+ms
+#直接转字符串翻转是否相等,感觉这样做是有点low,用时1700+ms
 
 
 class Solution:
