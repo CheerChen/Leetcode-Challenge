@@ -19,9 +19,9 @@ class Solution:
         ret=''
         if num>0:
             while num>26:
-                ret+=num%26 and chr(num%26+64) or chr(26+64)
-                num=num%26 and num/26 or num/26-1
-            ret+=num%26 and chr(num%26+64) or chr(26+64)
+                ret+=chr(num%26+64) if num%26 else chr(26+64)
+                num=num/26 if num%26 else num/26-1
+            ret+=chr(num%26+64) if num%26 else chr(26+64)
             ret=ret[::-1]
         return ret
 
