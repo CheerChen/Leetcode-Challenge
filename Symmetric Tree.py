@@ -48,6 +48,14 @@ class Solution:
                 return False
         return True
     
+    # @param p, a tree node
+    # @param q, a tree node
+    # @return a boolean
+    def isSameTree(self, p, q):
+        l1=self.levelOrder(p,True)
+        l2=self.levelOrder(q,True)
+        return l1==l2
+
     def createTree(self,lists):
         if lists:
             root=TreeNode(lists[0])
